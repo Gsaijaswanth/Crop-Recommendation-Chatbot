@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guidance</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="hero">
+        <h1>SMART FARMING GUIDE</h1>
+        <div class="dropdown">
+          <button class="dropbtn" onclick="toggleDropdown()">
+            Select Crop (58 Available)
+          </button>
+          <div id="dropdownContent" class="dropdown-content">
+            <!-- Cereals -->
+            <a href="#" onclick="showCrop('rice')">Rice</a>
+            <a href="#" onclick="showCrop('wheat')">Wheat</a>
+            <a href="#" onclick="showCrop('maize')">Maize</a>
+            <a href="#" onclick="showCrop('barley')">Barley</a>
+            <a href="#" onclick="showCrop('oats')">Oats</a>
+            <a href="#" onclick="showCrop('sorghum')">Sorghum</a>
+            <a href="#" onclick="showCrop('millet')">Millet</a>
+            
+            <!-- Pulses -->
+            <a href="#" onclick="showCrop('chickpea')">Chickpea</a>
+            <a href="#" onclick="showCrop('lentil')">Lentil</a>
+            <a href="#" onclick="showCrop('black_gram')">Black Gram</a>
+            <a href="#" onclick="showCrop('green_gram')">Green Gram</a>
+            <a href="#" onclick="showCrop('kidney_beans')">Kidney Beans</a>
+            <a href="#" onclick="showCrop('pigeon_peas')">Pigeon Peas</a>
+            
+            <!-- Oilseeds -->
+            <a href="#" onclick="showCrop('soybean')">Soybean</a>
+            <a href="#" onclick="showCrop('sunflower')">Sunflower</a>
+            <a href="#" onclick="showCrop('groundnut')">Groundnut</a>
+            <a href="#" onclick="showCrop('mustard')">Mustard</a>
+            <a href="#" onclick="showCrop('sesame')">Sesame</a>
+            
+            <!-- Vegetables -->
+            <a href="#" onclick="showCrop('tomato')">Tomato</a>
+            <a href="#" onclick="showCrop('potato')">Potato</a>
+            <a href="#" onclick="showCrop('onion')">Onion</a>
+            <a href="#" onclick="showCrop('garlic')">Garlic</a>
+            <a href="#" onclick="showCrop('cabbage')">Cabbage</a>
+            <a href="#" onclick="showCrop('cauliflower')">Cauliflower</a>
+            <a href="#" onclick="showCrop('carrot')">Carrot</a>
+            <a href="#" onclick="showCrop('spinach')">Spinach</a>
+            
+            <!-- Fruits -->
+            <a href="#" onclick="showCrop('mango')">Mango</a>
+            <a href="#" onclick="showCrop('banana')">Banana</a>
+            <a href="#" onclick="showCrop('apple')">Apple</a>
+            <a href="#" onclick="showCrop('orange')">Orange</a>
+            <a href="#" onclick="showCrop('grape')">Grape</a>
+            <a href="#" onclick="showCrop('strawberry')">Strawberry</a>
+            
+            <!-- Cash Crops -->
+            <a href="#" onclick="showCrop('cotton')">Cotton</a>
+            <a href="#" onclick="showCrop('sugarcane')">Sugarcane</a>
+            <a href="#" onclick="showCrop('tobacco')">Tobacco</a>
+            <a href="#" onclick="showCrop('coffee')">Coffee</a>
+            <a href="#" onclick="showCrop('tea')">Tea</a>
+            
+            <!-- Spices -->
+            <a href="#" onclick="showCrop('turmeric')">Turmeric</a>
+            <a href="#" onclick="showCrop('ginger')">Ginger</a>
+            <a href="#" onclick="showCrop('black_pepper')">Black Pepper</a>
+            <a href="#" onclick="showCrop('cardamom')">Cardamom</a>
+            
+            <!-- Root Crops -->
+            <a href="#" onclick="showCrop('sweet_potato')">Sweet Potato</a>
+            <a href="#" onclick="showCrop('cassava')">Cassava</a>
+            <a href="#" onclick="showCrop('yam')">Yam</a>
+            
+            <!-- Legumes -->
+            <a href="#" onclick="showCrop('peas')">Peas</a>
+            <a href="#" onclick="showCrop('beans')">Beans</a>
+            
+            <!-- Medicinal Plants -->
+            <a href="#" onclick="showCrop('aloe_vera')">Aloe Vera</a>
+            <a href="#" onclick="showCrop('basil')">Basil</a>
+            <a href="#" onclick="showCrop('mint')">Mint</a>
+          </div>
+        </div>
+      </header>
+      <div id="cropInfo" class="crop-info">
+        <!-- Crop information will be displayed here -->
+      </div>
+    </div>
+
+    <header>
+      <h1>🌱 ADVANCED CROP RECOMMENDATION SYSTEM</h1>
+    </header>
+    <main>
+      <section id="model-intro">
+        <h2>🤖 AI-Powered Crop Recommendations</h2>
+        <p>
+          Our advanced crop recommendation system uses machine learning to analyze
+          key factors such as soil nutrients, weather conditions, and rainfall
+          to provide informed agricultural decisions. We support <strong>58 different crops</strong>
+          including cereals, pulses, oilseeds, vegetables, fruits, spices, and medicinal plants.
+        </p>
+        <div class="features">
+          <div class="feature">
+            <h3>🌾 58 Crops Supported</h3>
+            <p>Comprehensive database covering all major crop categories</p>
+          </div>
+          <div class="feature">
+            <h3>🧠 Machine Learning</h3>
+            <p>Advanced algorithms for accurate predictions</p>
+          </div>
+          <div class="feature">
+            <h3>📊 Real-time Analysis</h3>
+            <p>Instant recommendations based on your conditions</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="explore-crops">
+        <h2>🔍 Explore Optimal Crops</h2>
+        <p>
+          Discover the ideal crops for your land by exploring the average
+          conditions required for each crop. Our model takes into account
+          nitrogen, phosphorus, potassium levels, temperature, humidity, pH, and
+          rainfall to suggest the most suitable crops from our database of 58 crops.
+        </p>
+      </section>
+      
+      <section id="crops-table">
+        <h3>📋 Average Conditions for Major Crops</h3>
+        <div class="table-container">
+          <table id="crop-table">
+            <thead>
+              <tr>
+                <th>Crop</th>
+                <th>Nitrogen</th>
+                <th>Phosphorus</th>
+                <th>Potassium</th>
+                <th>Temperature (°C)</th>
+                <th>Humidity (%)</th>
+                <th>pH</th>
+                <th>Rainfall (mm)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Table rows will be inserted here by JavaScript -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <section id="crop-recommendation-how-it-works">
+      <h2>How Crop Recommendation Works</h2>
+      <ol>
+        <li>
+          <strong>Data Input:</strong> Begin by entering details about your
+          land, such as soil nutrient levels, weather conditions, and historical
+          rainfall data.
+        </li>
+        <li>
+          <strong>Model Analysis:</strong> Our machine learning model analyzes
+          the data using sophisticated algorithms to determine the most suitable
+          crops for your land.
+        </li>
+        <li>
+          <strong>Recommendation:</strong> Receive a recommended crops
+          along with detailed information about their optimal growing
+          conditions.
+        </li>
+      </ol>
+    </section>
+
+    <header>
+      <h1>🔬 ADVANCED PLANT DISEASE DETECTION</h1>
+    </header>
+
+    <section id="smart-disease-detection">
+      <h2>🌿 AI-Powered Disease Identification</h2>
+      <p>
+        Our advanced plant disease detection system uses sophisticated computer vision techniques
+        to identify plant diseases efficiently. Upload an image of a plant, and our system will
+        analyze it to detect any signs of diseases. We can identify <strong>38 different diseases</strong>
+        across various plant species. Together, let's protect our crops and ensure a healthier harvest!
+      </p>
+      
+      <div class="features">
+        <div class="feature">
+          <h3>🔍 38 Diseases Supported</h3>
+          <p>Comprehensive database covering major plant diseases</p>
+        </div>
+        <div class="feature">
+          <h3>🤖 Advanced AI Analysis</h3>
+          <p>Computer vision techniques for accurate detection</p>
+        </div>
+        <div class="feature">
+          <h3>⚡ Instant Results</h3>
+          <p>Quick analysis with high confidence scores</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="crop-recommendation-how-it-works">
+      <h2>🔬 How Plant Disease Detection Works</h2>
+      <ol>
+        <li>
+          <strong>📸 Upload Image:</strong> Go to the
+          <strong>Disease Recognition</strong> page and upload a clear image of a
+          plant with suspected diseases.
+        </li>
+        <li>
+          <strong>🧠 AI Analysis:</strong> Our advanced system processes the image using
+          sophisticated computer vision algorithms to identify potential diseases.
+        </li>
+        <li>
+          <strong>📊 Results & Recommendations:</strong> View detailed results with confidence scores
+          and get recommendations for treatment and prevention.
+        </li>
+      </ol>
+      
+      <div class="disease-categories">
+        <h3>🌱 Supported Disease Categories:</h3>
+        <ul>
+          <li><strong>Apple Diseases:</strong> Scab, Black Rot, Cedar Apple Rust</li>
+          <li><strong>Tomato Diseases:</strong> Bacterial Spot, Early Blight, Late Blight, Leaf Mold</li>
+          <li><strong>Potato Diseases:</strong> Early Blight, Late Blight</li>
+          <li><strong>Corn Diseases:</strong> Common Rust, Northern Leaf Blight</li>
+          <li><strong>Grape Diseases:</strong> Black Rot, Esca, Leaf Blight</li>
+          <li><strong>And many more...</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- <section id="about-project">
+      <h2>About</h2>
+      <p>
+        This dataset is recreated using offline augmentation from the original
+        dataset. The original dataset can be found on this GitHub repo.
+      </p>
+      <h3>Content</h3>
+      <ul>
+        <li>train (70295 images)</li>
+        <li>test (33 images)</li>
+        <li>validation (17572 images)</li>
+      </ul>
+    </section> -->
+
+    <section class="footer">
+      <p class="footer-text">© Copyright – All Rights Reserved Team AgriSens</p>
+    </div>
+
+  </section>
+    <script src="script.js"></script>
+  </body>
+</html>

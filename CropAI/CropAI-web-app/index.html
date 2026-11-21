@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CropAI</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+      <div class="logo">
+        <h1>CropAI</h1>
+      </div>
+
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="explore/index.html" class="btn">EXPLORE NOW</a>
+      </nav>
+
+      <div class="fas fa-bars" id="menu-btn"></div>
+    </header>
+    <!-- navbar sections ends  -->
+
+    <!-- home section stars  -->
+
+    <section class="home" id="home">
+      <div class="content">
+        <h1>YOUR SMART FARMING ASSISTANT</h1>
+        <p>Smart Crops, Smart Choices with CropAI!</p>
+
+        <a href="guide/index.html" class="home-btn" target="_blank "
+          >Smart Farming guide</a
+        >
+      </div>
+
+      <div class="image">
+        <img class="image" src="images/amit-front2.jpg" alt="heading-image" />
+      </div>
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- features sectin starts  -->
+
+    <section class="features" id="features">
+      <div class="heading">
+        <h1>Features</h1>
+        <p>
+          CropAI provides farmers with essential tools for smarter farming. It
+          offers personalized crop recommendations based on soil and climate,
+          provides advanced AI predictions. The app also includes features for 
+          crop planning and guidance, ensuring optimal farming decisions for 
+          better yields and healthier crops.
+        </p>
+      </div>
+
+      <div class="button-container0">
+        <a href="http://localhost:8501" class="buttonn"
+          >Crop Recommendations</a
+        >
+        
+        <a href="guide/index.html" class="buttonn">Smart Farming Guidance</a>
+      </div>
+
+      <div class="row">
+        <!-- 1 Tab  -->
+
+        <div class="content">
+          <h1>Smart Crop Planning</h1>
+          <p>
+            Harness the power of data analysis to predict crop suitability,
+            providing insights into optimal cultivation conditions. CropAI
+            optimizes farming decisions based on comprehensive factors like soil
+            quality, climate, and more.
+          </p>
+        </div>
+
+        <div class="image">
+          <img
+            src="images/crop-planning.jpg"
+            alt="crop-planning"
+            class="rounded-corner-image"
+          />
+        </div>
+
+        <!-- 1 Tab  -->
+
+        <!-- 2 Tab  -->
+        
+
+        
+
+        <!-- 2 Tab  -->
+
+        <!-- 3 Tab  -->
+
+        <div class="content">
+          <h1>Smart Farming, Simple Guidance</h1>
+          <p>
+            Smart Crop Guide offers a simple, step-by-step plan for growing
+            crops. It provides expert planting tips, tracks growth stages, and
+            sends watering reminders. The app also gives pest control advice,
+            harvest timing, climate insights, and fertilizer recommendations to
+            ensure healthy crops.
+          </p>
+
+        </div>
+
+        <div class="image">
+          <img
+            src="images/guide.png"
+            alt="ranked-recommendations"
+            class="rounded-corner-image"
+          />
+        </div>
+
+        <!-- 3 Tab  -->
+
+        <!-- 4 Tab  -->
+
+        <div class="image">
+          <img
+            src="images/modern-farm.jpg"
+            alt="modern-farms"
+            class="rounded-corner-image"
+          />
+        </div>
+
+        <div class="content">
+          <h1>Innovations for Modern Farms</h1>
+          <p>
+            Smart Crop Tech, Precision Farming, and Customizable Solutions for
+            Sustainable and Efficient Agriculture!
+          </p>
+        </div>
+
+        <!-- 4 Tab  -->
+
+        <!-- 5 Tab  -->
+
+        <div class="content">
+          <h1>User-Friendly Interface</h1>
+          <p>
+            Our application features a user-friendly interface designed for
+            farmers of all technological backgrounds. With simple inputs like
+            location and crop selection, users can effortlessly access detailed
+            information on crop suitability and recommended planting schedules.
+          </p>
+        </div>
+
+        <div class="image">
+          <img
+            src="images/User-Friendly.jpeg"
+            alt="user-friendly"
+            class="rounded-corner-image"
+          />
+        </div>
+
+        <!-- 5 Tab  -->
+      </div>
+    </section>
+
+    <!-- features sectin ends -->
+
+
+
+    <!-- Chatbot -->
+    <div class="chatbot-icon" onclick="toggleChat()">
+      <img src="images/chatbot-icon.svg" alt="Chatbot Icon">
+    </div>
+    <div class="chat-container" id="chat-container">
+      <div class="chat-box" id="chat-box">
+        <div class="message bot-message">
+          <p>Hi there! How can I assist you today?</p>
+        </div>
+      </div>
+      <div class="input-box">
+        <input type="text" id="keyword" placeholder="Please enter the crop name or type" onkeypress="handleKeyPress(event)">
+        <button onclick="fetchOptions()">Send</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
